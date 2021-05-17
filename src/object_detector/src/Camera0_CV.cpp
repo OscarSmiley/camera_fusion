@@ -7,7 +7,7 @@
 
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "cmaera0");
+    ros::init(argc, argv, "camera0");
     ros::NodeHandle nh;
     ros::Publisher cam1_pub = nh.advertise<std_msgs::String>("camera0_cv", 1000);
 

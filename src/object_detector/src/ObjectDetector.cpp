@@ -26,12 +26,13 @@ int main(int argc, char **argv){
 
     
     int count = 0;
+    //rate is a total guess
     ros::Rate r(10);
     while(ros::ok()){
         //create the message
         std_msgs::String msg;
         std::stringstream ss;
-        ss << "hey lol" << count;
+        ss << "object_detector" << count;
         msg.data = ss.str();
         
         //log the message
