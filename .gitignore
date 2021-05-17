@@ -1,0 +1,18 @@
+# Ignore all build and devel catkin generated directories
+build/
+devel/
+
+# Ignore python bytecode files
+*.pyc
+
+# Igore __pycache__ directories
+__pycache__/
+
+# Ignore this test workspace
+/tests/testworkspace/*
+
+# Ignore untracked_documents directory
+untracked_documents/
+
+# Ignore vscode files
+.vscode
