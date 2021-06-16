@@ -5,23 +5,11 @@
 #include <fstream>
 #include <string>
 
-//displacement from cam0 
-const int XDISP = 10;
-const int YDISP = 0;
-const int ZDISP = 0;
-
-void cam0_to_cam1(int * in, int * out){
-    //TODO: add cam0 -> cam1 co-ordinate transform
-}
-
-void cam1_to_cam0(int * in, int * out){
-    //TODO: add cam1 -> cam0 co-ordinate transform
-}
 
 int main(int argc, char **argv){
-    ros::init(argc, argv, "camera1");
+    ros::init(argc, argv, "camera0");
     ros::NodeHandle nh;
-    ros::Publisher cam1_pub = nh.advertise<std_msgs::String>("camera1_cv", 1000);
+    ros::Publisher cam1_pub = nh.advertise<std_msgs::String>("camera0_cv", 1000);
 
     if(argc < 1){
          ROS_INFO("not enough arguments");

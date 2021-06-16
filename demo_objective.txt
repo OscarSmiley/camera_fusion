@@ -1,0 +1,5 @@
+objective of the camera_fusion demo:
+Demonstrate the interaction between cv ros nodes when detecting sterioscopic depth. 
+
+Camera_0 ros node: Publishes canned cv data as vertices. This simulates the master cv camera (such as firefly s or dl)
+Camera_1 ros node: Converts cv data from camera_0 to camera_1 co-ordinate system using dimensional constants, returns a z value at 50% of interpolated line between "near" and "far" plane
