@@ -1,5 +1,6 @@
 #include "ros/ros.h"
 #include "std_msgs/String.h"
+#include <Eigen/Dense>
 #include <iostream>
 #include <sstream>
 #include <fstream>

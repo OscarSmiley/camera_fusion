@@ -204,6 +204,9 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-include_directories(include ${catkin_INCLUDE_DIRS})
+include_directories(
+  ../../include
+  ${catkin_INCLUDE_DIRS}
+  )
 add_executable(Camera1_CV src/Camera1_CV)
 target_link_libraries(Camera1_CV ${catkin_LIBRARIES})

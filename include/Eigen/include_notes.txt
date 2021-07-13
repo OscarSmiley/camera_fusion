@@ -1,0 +1,3 @@
+Eigen header-only library for C++ matrix algebra done in 3d transforms
+Vesion: 3.3.9 
+Code in this folder FOSS from https://eigen.tuxfamily.org/
